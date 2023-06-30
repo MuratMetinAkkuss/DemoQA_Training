@@ -1,11 +1,9 @@
-package tests.demoQA_day1;
+package tests.demoQA;
 
-import net.bytebuddy.implementation.auxiliary.MethodCallProxy;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.WindowType;
 import org.openqa.selenium.interactions.Actions;
 import utilities.TestBaseClass;
 
@@ -13,7 +11,7 @@ public class C01_Elements extends TestBaseClass {
     @Test
     public void test01(){
         //Text Box
-        driver.get("https://demoqa.com/text-box");
+
         //FullName Test
         WebElement fullNameElement =driver.findElement(By.xpath("//input[@id='userName']"));
         fullNameElement.sendKeys("Murat Metin Akkus");

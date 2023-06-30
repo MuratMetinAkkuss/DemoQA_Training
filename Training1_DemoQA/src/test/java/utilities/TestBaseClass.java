@@ -17,11 +17,12 @@ public class TestBaseClass {
      driver = new ChromeDriver();
      driver.manage().window().maximize();
      driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+     driver.get("https://demoqa.com/text-box");
  }
 
  @AfterClass
     public static void teardown(){
-     driver.close();
+     //driver.close();
  }
 
  public static void stop (int seconds) {
